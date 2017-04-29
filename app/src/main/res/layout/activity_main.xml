@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hayanesh.feeder.MainActivity">
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_gravity="top"
+        android:layout_marginTop="-70dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/feeder"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:keepScreenOn="true"
+        android:text="Feed"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        />
+    <LinearLayout
+        android:layout_below="@+id/title_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <Button
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_corner"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:gravity="center_horizontal"/>
+        <View
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Sign in"
+            android:textSize="14sp"
+            android:background="@drawable/rounded_corner1"/>
+    </LinearLayout>
+</RelativeLayout>
